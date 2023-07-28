@@ -1,6 +1,6 @@
-# Money Transfer Business - Laravel 10 PHP Interview Task
+# Money Transfer Business - Laravel 10 PHP Skill Demonstartion
 
-In this interview task, you are required to create a Laravel application for a money transfer business. The application should have an admin panel with the following features:
+In this Demonstartion, i have created a Laravel application for a money transfer business. The application have an admin panel with the following features:
 
 ## Feature 1: Configuring Sending and Receiving Countries
 
@@ -63,7 +63,7 @@ Please feel free to explore and test this API-integrated feature, and I am open 
 
 
 
-## Laravel 10 PHP Interview Task - Installation Guide
+## Installation Guide
 
 Follow the steps below to download the Laravel project from a Git repository and set it up on your local system:
 
@@ -153,6 +153,13 @@ The application will be accessible at `http://localhost:8000` by default.
 ### Step 7: Register Admin Account
 
 In your web browser, go to `http://localhost:8000/register` and complete the registration process to create an admin account. This account will be used to access the admin panel and configure sending and receiving countries, as well as static and customized rates.
+
+### Step 8: Run Tests
+
+```bash
+php artisan test
+```
+
 
 I am now submitting the code for your review. I have implemented the features as per the requirements and integrated the admin panel functionalities along with the currency conversion logic.
 
