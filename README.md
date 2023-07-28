@@ -78,10 +78,10 @@ Follow the steps below to download the Laravel project from a Git repository and
 Open a terminal or command prompt and navigate to the directory where you want to download the project. Then, run the following command to clone the repository:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/swapins/moneytransferdemo.git
 ```
 
-Replace `<repository_url>` with the actual URL of the Git repository.
+
 
 ### Step 2: Install Dependencies
 
