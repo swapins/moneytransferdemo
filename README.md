@@ -26,7 +26,7 @@ Similarly:
 
 In this case, the home page should display the conversion rate as 289.00 rupees.
 
-Feature 3: API Integration for Retrieving List of Nations and Details
+## Feature 3: API Integration for Retrieving List of Nations and Details
 
 As an additional feature and to showcase my skills, I have integrated an API call to retrieve a list of nations and their details for future functionalities in the money transfer business application.
 
