@@ -1,0 +1,20 @@
+PHP Interview Task
+Introduction: This is a money transfer business, and the client has asked below features.
+Admin Panel: 
+Feature 1: In admin panel, the admin should be able to configure which countries he can activate and deactivate as sending and receiving countries.
+ For Instance, at one point in the home page of the website we have Sending countries as UK and US then 
+ Admin can deactivate any country for eg US from backend and it should reflect at the front end.
+  So only one country UK will be shown in the sending countries list.
+Similarly, the list of receiving countries should also be configurable from the backend.
+Feature 2: In admin panel we would have Static rate and customised rate.
+Both are configurable. Customised rate depends on static rate either as value or percentage.
+For instance: Sending country is UK and receiving country is India, then the static rate is 100.00 rupees per pound and let's say customised rate is (+ or -) 5 or by % -1
+So customised rate is -5 means it should show as 95 in the home page
+If it is +5 means it should show 105 in the home page.
+
+Similarly, the sending country is US and the receiving Country Is Pakistan static rate is 286.00 but the customised rate is +3 then on the home page it should show as 289.00 as the conversion rate.
+
+
+
+
+
