@@ -67,8 +67,30 @@ class ExchangeController extends Controller
     public function updateRate(Request $request, $id){
         try {
             $exchange = Exchange::findOrFail($id);
-            $exchange->update($request->all());
+            $exchange->fill($request->all());
+            if($exchange->isDirty()){
+
+                //find if factor is percentage or correction factor
+                    $static = $exchange->staticrate;
+                    $factor = $exchange->factor;
+                    $coustomrate = $exchange->customrate;
+
+                    if ($factor == "1"){
+                        $finalrate = $static + $coustomrate;
+                    }else{
+                        $finalrate = $static + ($static / 100) * $coustomrate;
+                    }
+                // price has changed
+                $exchange->update([
+                    'finalrate' => $finalrate,
+                ]);
+            }
+            $exchange->save();
+
             return back()->with('success', 'Exchange record updated successfully');
+
+
+
         } catch (\Exception $e) {
             return back()->with('error', 'Error updating Exchange record');
         }
