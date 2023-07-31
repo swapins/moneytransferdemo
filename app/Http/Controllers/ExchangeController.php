@@ -9,11 +9,6 @@ use Illuminate\Http\Request;
 class ExchangeController extends Controller
 {
     public function saveRate(Request $request){
-    //     "sendingcountry" => "2"
-    //   "recevingcountry" => "21"
-    //   "staticrate" => "188"
-    //   "customrate" => "10"
-    //   "factor" => "Factor"
 
     $validatedData = $request->validate([
         'sendingcountry' => 'required|integer',
